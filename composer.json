@@ -1,23 +1,23 @@
 {
-    "name": ":vendor_name/:package_name",
+    "name": "moonshine/advanced-fields",
     "description": "Description",
     "keywords": ["keyword"],
     "type": "library",
-    "homepage": "https://moonshine.cutcode.dev",
+    "homepage": "https://moonshine-laravel.com",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/:vendor_name/:package_name/issues",
-        "source": "https://github.com/:vendor_name/:package_name"
+        "issues": "https://github.com/moonshine/advanced-fields/issues",
+        "source": "https://github.com/moonshine/advanced-fields"
     },
     "authors": [
         {
-            "name": "Author name",
-            "email": "author@example.com",
-            "homepage": "https://example.com"
+            "name": "Danil Shutsky",
+            "email": "info@cutcode.dev",
+            "homepage": "https://cutcode.dev"
         }
     ],
     "require": {
-        "php": "^8.0|^8.1|^8.2",
+        "php": "^8.2|^8.3|^8.4",
         "ext-curl": "*",
         "ext-json": "*"
     },
@@ -25,17 +25,16 @@
         "phpunit/phpunit": "^11.0",
         "orchestra/testbench": "^9.0",
         "rector/rector": "^1.0",
-        "moonshine/moonshine": "3.x-dev"
+        "moonshine/moonshine": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\PackageName\\": "src/"
+            "MoonShine\\AdvancedFields\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\PackageName\\Tests\\": "tests/",
-            "VendorName\\PackageName\\Database\\Factories\\": "database/factories/"
+            "MoonShine\\AdvancedFields\\Tests\\": "tests/"
         }
     },
     "conflict": {
@@ -49,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\PackageName\\Providers\\PackageNameServiceProvider"
+                "MoonShine\\AdvancedFields\\Providers\\AdvancedFieldsServiceProvider"
             ]
         }
     }

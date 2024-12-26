@@ -31,6 +31,10 @@ abstract class TestCase extends Orchestra
     {
         $app['config']->set('app.debug', 'true');
         $app['config']->set('moonshine.cache', 'array');
+        $app['config']->set('moonshine.use_migrations', true);
+        $app['config']->set('moonshine.use_notifications', true);
+        $app['config']->set('moonshine.use_database_notifications', false);
+        $app['config']->set('moonshine.auth.enabled', true);
     }
 
     protected function getPackageProviders($app): array

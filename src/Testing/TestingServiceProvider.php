@@ -2,19 +2,20 @@
 
 declare(strict_types=1);
 
-namespace VendorName\PackageName\Testing;
+namespace MoonShine\AdvancedFields\Testing;
 
-use MoonShine\Laravel\Providers\MoonShineApplicationServiceProvider;
+use Illuminate\Support\ServiceProvider;
+use MoonShine\Contracts\Core\DependencyInjection\CoreContract;
 use MoonShine\Laravel\Resources\MoonShineUserResource;
 use MoonShine\Laravel\Resources\MoonShineUserRoleResource;
 
-final class TestingServiceProvider extends MoonShineApplicationServiceProvider
+final class TestingServiceProvider extends ServiceProvider
 {
-    protected function resources(): array
+    public function boot(CoreContract $core): void
     {
-        return [
+        $core->resources([
             MoonShineUserResource::class,
             MoonShineUserRoleResource::class,
-        ];
+        ]);
     }
 }
