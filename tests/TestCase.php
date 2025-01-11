@@ -3,12 +3,12 @@
 namespace MoonShine\AdvancedFields\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use MoonShine\AdvancedFields\Providers\AdvancedFieldsServiceProvider;
+use MoonShine\AdvancedFields\Testing\TestingServiceProvider;
 use MoonShine\Laravel\Models\MoonshineUser;
 use MoonShine\Laravel\Models\MoonshineUserRole;
 use MoonShine\Laravel\Providers\MoonShineServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use MoonShine\AdvancedFields\Providers\AdvancedFieldsServiceProvider;
-use MoonShine\AdvancedFields\Testing\TestingServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
