@@ -18,7 +18,7 @@ class ButtonGroup extends Field
 
     protected ?Closure $optionAttributes = null;
 
-    protected string $view = 'admin.fields.button-group';
+    protected string $view = 'moonshine-af::fields.button-group';
 
     /**
      * @param array<string, int|string> $options

@@ -16,7 +16,7 @@ class RadioGroup extends Field
 
     protected ?Closure $optionAttributes = null;
 
-    protected string $view = 'admin.fields.radio-group';
+    protected string $view = 'moonshine-af::fields.radio-group';
 
     /**
      * @param array<string, int|string> $options
