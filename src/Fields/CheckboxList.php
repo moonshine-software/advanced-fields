@@ -18,7 +18,7 @@ class CheckboxList extends Field
 
     protected bool $isGroup = true;
 
-    protected string $view = 'admin.fields.checkbox-list';
+    protected string $view = 'moonshine-af::fields.checkbox-list';
 
     /**
      * @param array<string, int|string> $options
