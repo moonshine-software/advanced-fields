@@ -14,5 +14,9 @@ final class AdvancedFieldsServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'moonshine-af');
 
         Blade::componentNamespace('MoonShine\AdvancedFields\Fields', 'moonshine-af');
+
+        $this->publishes([
+            __DIR__ . '/../../public' => public_path('vendor/moonshine-af'),
+        ], ['moonshine-af', 'laravel-assets']);
     }
 }

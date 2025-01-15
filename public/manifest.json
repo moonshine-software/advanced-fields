@@ -1,0 +1,7 @@
+{
+  "resources/css/af.css": {
+    "file": "css/af.css",
+    "isEntry": true,
+    "src": "resources/css/af.css"
+  }
+}
