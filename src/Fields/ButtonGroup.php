@@ -6,7 +6,6 @@ namespace MoonShine\AdvancedFields\Fields;
 
 use Closure;
 use MoonShine\AssetManager\Css;
-use MoonShine\AssetManager\Js;
 use MoonShine\UI\Fields\Field;
 
 class ButtonGroup extends Field
