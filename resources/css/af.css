@@ -1,0 +1,18 @@
+.af-button-group {
+    @apply flex;
+
+    .btn {
+        @apply relative rounded-none first:rounded-l-md last:rounded-r-md;
+
+        input {
+            @apply hidden;
+        }
+
+        label {
+            @apply cursor-pointer absolute inset-0;
+        }
+    }
+    .btn:has(:checked) {
+        @apply border-primary bg-primary text-white hover:bg-primary/80 hover:text-white focus:ring-primary focus:ring-opacity-20 dark:focus:ring-opacity-40;
+    }
+}

@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace MoonShine\AdvancedFields\Fields;
 
 use Closure;
+use MoonShine\AssetManager\Css;
+use MoonShine\AssetManager\Js;
 use MoonShine\UI\Fields\Field;
 
 class ButtonGroup extends Field
@@ -19,6 +21,13 @@ class ButtonGroup extends Field
     protected ?Closure $optionAttributes = null;
 
     protected string $view = 'moonshine-af::fields.button-group';
+
+    protected function assets(): array
+    {
+        return [
+            Css::make('vendor/moonshine-af/css/af.css'),
+        ];
+    }
 
     /**
      * @param array<string, int|string> $options
