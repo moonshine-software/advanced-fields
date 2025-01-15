@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MoonShine\AdvancedFields\Fields;
+namespace MoonShine\Advanced\Fields;
 
 use Closure;
 use MoonShine\UI\Fields\Field;
@@ -18,7 +18,7 @@ class CheckboxList extends Field
 
     protected bool $isGroup = true;
 
-    protected string $view = 'moonshine-af::fields.checkbox-list';
+    protected string $view = 'moonshine-advanced::fields.checkbox-list';
 
     /**
      * @param array<string, int|string> $options

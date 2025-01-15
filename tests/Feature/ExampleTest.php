@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MoonShine\AdvancedFields\Tests\Feature;
+namespace MoonShine\Advanced\Tests\Feature;
 
-use MoonShine\AdvancedFields\Tests\TestCase;
+use MoonShine\Advanced\Tests\TestCase;
 use PHPUnit\Framework\Attributes\Test;
 
 final class ExampleTest extends TestCase

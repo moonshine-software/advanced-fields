@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MoonShine\AdvancedFields\Testing;
+namespace MoonShine\Advanced\Testing;
 
 use Illuminate\Support\ServiceProvider;
 use MoonShine\Contracts\Core\DependencyInjection\CoreContract;

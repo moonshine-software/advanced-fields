@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MoonShine\AdvancedFields\Fields;
+namespace MoonShine\Advanced\Fields;
 
 use Closure;
 use MoonShine\AssetManager\Css;
@@ -19,12 +19,12 @@ class ButtonGroup extends Field
 
     protected ?Closure $optionAttributes = null;
 
-    protected string $view = 'moonshine-af::fields.button-group';
+    protected string $view = 'moonshine-advanced::fields.button-group';
 
     protected function assets(): array
     {
         return [
-            Css::make('vendor/moonshine-af/css/af.css'),
+            Css::make('vendor/moonshine-advanced/css/main.css'),
         ];
     }
 

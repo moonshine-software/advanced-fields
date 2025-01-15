@@ -1,13 +1,13 @@
 {
-    "name": "moonshine/advanced-fields",
+    "name": "moonshine/advanced",
     "description": "Description",
     "keywords": ["keyword"],
     "type": "library",
     "homepage": "https://moonshine-laravel.com",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/moonshine/advanced-fields/issues",
-        "source": "https://github.com/moonshine/advanced-fields"
+        "issues": "https://github.com/moonshine/advanced/issues",
+        "source": "https://github.com/moonshine/advanced"
     },
     "authors": [
         {
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MoonShine\\AdvancedFields\\": "src/"
+            "MoonShine\\Advanced\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MoonShine\\AdvancedFields\\Tests\\": "tests/"
+            "MoonShine\\Advanced\\Tests\\": "tests/"
         }
     },
     "conflict": {
@@ -48,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MoonShine\\AdvancedFields\\Providers\\AdvancedFieldsServiceProvider"
+                "MoonShine\\Advanced\\Providers\\AdvancedServiceProvider"
             ]
         }
     }

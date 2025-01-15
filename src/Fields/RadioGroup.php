@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MoonShine\AdvancedFields\Fields;
+namespace MoonShine\Advanced\Fields;
 
 use Closure;
 use MoonShine\UI\Fields\Field;
@@ -16,7 +16,7 @@ class RadioGroup extends Field
 
     protected ?Closure $optionAttributes = null;
 
-    protected string $view = 'moonshine-af::fields.radio-group';
+    protected string $view = 'moonshine-advanced::fields.radio-group';
 
     /**
      * @param array<string, int|string> $options

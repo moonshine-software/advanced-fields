@@ -1,10 +1,10 @@
 <?php
 
-namespace MoonShine\AdvancedFields\Tests;
+namespace MoonShine\Advanced\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use MoonShine\AdvancedFields\Providers\AdvancedFieldsServiceProvider;
-use MoonShine\AdvancedFields\Testing\TestingServiceProvider;
+use MoonShine\Advanced\Providers\AdvancedServiceProvider;
+use MoonShine\Advanced\Testing\TestingServiceProvider;
 use MoonShine\Laravel\Models\MoonshineUser;
 use MoonShine\Laravel\Models\MoonshineUserRole;
 use MoonShine\Laravel\Providers\MoonShineServiceProvider;
@@ -41,7 +41,7 @@ abstract class TestCase extends Orchestra
     {
         return [
             MoonShineServiceProvider::class,
-            AdvancedFieldsServiceProvider::class,
+            AdvancedServiceProvider::class,
             TestingServiceProvider::class,
         ];
     }
