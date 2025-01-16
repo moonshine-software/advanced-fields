@@ -18,5 +18,6 @@ final class AsyncTab
     public function __construct(
         public string $label,
         public string $href,
-    ) {}
+    ) {
+    }
 }

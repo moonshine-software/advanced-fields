@@ -35,7 +35,8 @@ final class AsyncTabs extends AbstractWithComponents
         parent::__construct(
             $collection
                 ->ensure(AsyncTab::class)
-                ->map(fn(AsyncTab $tab) => ActionButton::make($tab->label, $tab->href)
+                ->map(
+                    fn (AsyncTab $tab) => ActionButton::make($tab->label, $tab->href)
                     ->async(selector: ".{$this->contentClass}", callback: AsyncCallback::with(afterResponse: 'asyncTabs'))
                 )
         );
@@ -44,7 +45,7 @@ final class AsyncTabs extends AbstractWithComponents
     protected function viewData(): array
     {
         return [
-            'contentClass' => $this->contentClass
+            'contentClass' => $this->contentClass,
         ];
     }
 }
