@@ -26,9 +26,9 @@ final class AdvancedServiceProvider extends ServiceProvider
             $filler = value($this->getFiller());
 
             return $this->setUrl(
-                fn() => $filler->getFragmentLoadUrl(BaseLayout::CONTENT_FRAGMENT_NAME)
+                fn () => $filler->getFragmentLoadUrl(BaseLayout::CONTENT_FRAGMENT_NAME)
             )->changeButton(
-                static fn(ActionButton $btn) => $btn->async(
+                static fn (ActionButton $btn) => $btn->async(
                     selector: '#' . BaseLayout::CONTENT_ID,
                     callback: AsyncCallback::with(afterResponse: 'spaMenu')
                 )
