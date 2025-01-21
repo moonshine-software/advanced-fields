@@ -1,7 +1,7 @@
 {
   "resources/css/main.css": {
     "file": "css/main.css",
-    "src": "resources/css/main.css",
-    "isEntry": true
+    "isEntry": true,
+    "src": "resources/css/main.css"
   }
 }
