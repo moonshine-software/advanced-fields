@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace MoonShine\Advanced\Components\Tabs;
 
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Vite;
 use MoonShine\AssetManager\Js;
 use MoonShine\Support\DTOs\AsyncCallback;
 use MoonShine\UI\Components\AbstractWithComponents;
@@ -20,7 +19,7 @@ final class AsyncTabs extends AbstractWithComponents
     protected function assets(): array
     {
         return [
-            Js::make(Vite::asset('resources/js/app.js', 'vendor/moonshine-advanced')),
+            Js::make('vendor/moonshine-advanced/js/app.js'),
         ];
     }
 

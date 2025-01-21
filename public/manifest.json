@@ -1,12 +1,7 @@
 {
   "resources/css/main.css": {
     "file": "css/main.css",
-    "isEntry": true,
-    "src": "resources/css/main.css"
-  },
-  "resources/js/app.js": {
-    "file": "assets/app-7de4c859.js",
-    "isEntry": true,
-    "src": "resources/js/app.js"
+    "src": "resources/css/main.css",
+    "isEntry": true
   }
 }

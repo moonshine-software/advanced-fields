@@ -4,15 +4,12 @@ export default defineConfig({
         emptyOutDir: false,
         manifest: true,
         rollupOptions: {
-            input: ['resources/css/main.css', 'resources/js/app.js'],
+            input: ['resources/css/main.css'],
             output: {
                 assetFileNames: file => {
                     let ext = file.name.split('.').pop()
                     if (ext === 'css') {
                         return 'css/main.css'
-                    }
-                    if (ext === 'js') {
-                        return 'js/app.js'
                     }
                 }
             }
